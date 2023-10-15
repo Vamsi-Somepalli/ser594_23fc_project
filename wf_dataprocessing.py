@@ -6,7 +6,7 @@ def preprocess(inputfile):
 
     # Convert the "Date" column to datetime
     df['Date'] = pd.to_datetime(df['Date'])
-
+    print(len(df))
     # Filter data for years after 2019
     df = df[df['Date'].dt.year >= 2019]
 

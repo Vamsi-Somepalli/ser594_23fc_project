@@ -1,11 +1,11 @@
-#### SERX94: Project Proposal
-#### Crime Analytics (title)
+#### SER594: Project Proposal
+#### Crime Analytics: City of Chicago (title)
 #### Vamsi Krishna Somepalli (author)
-#### 9/9/2023 (date)
+#### 10/15/2023 (date)
 
-Keywords: Crime,Crime Rate, Crime Classification,Crime trends,Hotspots.
+Keywords: Crime, Crime Classification, Crime trends, Crime Rate.
 
-Description: Crime analytics is a data driven project aimed to improve public safety and law enforcement by data analysis. This Project uses open data primarily sourced at https://data.gov/ (https://catalog.data.gov/dataset/crime-data-from-2020-to-present) the house of the US government's open data intended to public use.This project includes analysing crime trends, identifing crime hotspots, classifing different type of crimes. The primary data source will be updated on regular basis(mostly weekly/daily) as of 9/11/2023 the data set is updated on 9/8/2023.
+Description: Crime analytics is a data driven project aimed to improve public safety and law enforcement by data analysis. This Project uses open data primarily sourced at https://data.gov/ (https://catalog.data.gov/dataset/crimes-2001-to-present) the house of the US government's open data intended to public use. This project includes analysing crime trends, classifing different type of crimes. The primary data source will be updated on regular basis(mostly weekly/daily) as of 9/11/2023 the data set is updated on 9/8/2023.
 
 Intellectual Merit: Crime Analytics has alot of potential in the field of criminology, public safety and data science.This analysis helps in determining the trends/patterns in crimes and possible cause of crimes. Identifing the crime hotspots helps in urban planing and resource allocation and possible crime predection. Classsifing crimes into different categories helps in creating crime topology that helps in determining crime behaviour.
 
