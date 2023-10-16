@@ -69,18 +69,36 @@ Location: A combined field that provides the geographical coordinates (latitude 
 0d3f739d78494e6ca14955cd7e35b77e
 
 ## Interpretable Records
+
 ### Record 1
 **Raw Data:** 
-ID	Case Number	Date	Block	IUCR	Primary Type	Description	Location Description	Arrest	Domestic	Beat	District	Ward	Community Area	FBI Code	X Coordinate	Y Coordinate	Year	Updated On	Latitude	Longitude	Location
-13210088	JG423627	8/31/2023 12:00	023XX W JACKSON BLVD	1153	DECEPTIVE PRACTICE	FINANCIAL IDENTITY THEFT OVER $ 300	STREET	FALSE	FALSE	1225	12	27	28	11	1160870	1898642	2023	9/16/2023 15:41	41.87756511	-87.68479102	(41.877565108, -87.68479102)
+ID,Case Number,Date,Block,IUCR,Primary Type,Description,Location Description,Arrest,Domestic,Beat,District,Ward,Community Area,FBI Code,X Coordinate,Y Coordinate,Year,Updated On,Latitude,Longitude,Location
+13210088,JG423627,2023-08-31 12:00:00,023XX W JACKSON BLVD,1153,DECEPTIVE PRACTICE,FINANCIAL IDENTITY THEFT OVER $ 300,STREET,False,False,1225,12.0,27.0,28.0,11,1160870.0,1898642.0,2023,09/16/2023 03:41:56 PM,41.877565108,-87.68479102,"(41.877565108, -87.68479102)"
 
+**Interpretation:** 
+This row of data represents a specific incident that occurred on August 31, 2023, at 12:00 PM at the location "023XX W JACKSON BLVD" 
+The incident is classified as a "DECEPTIVE PRACTICE" with a description of "FINANCIAL IDENTITY THEFT OVER $300." It happened on a "STREET" 
+There was no arrest made, and it was not a domestic incident. This incident falls within Beat 1225, District 12, Ward 27, and Community Area 28. 
+The FBI Code for this incident is 11. The geographical coordinates of the incident are approximately (41.87756511, -87.68479102)
+The data entry indicates that the incident occurred in the year 2023, and the last update to this record was on September 16, 2023, at 15:41.Further more case ID and Case number for this incident are 13210088 JG423627 respectively.
 
-Interpretation:** TODO
+Reasonableness:
+The data is reasonable. It provides detailed information about a specific non-violent criminal incident, indicating the location, type of crime, and relevant law enforcement details. The data also includes geographical coordinates for precise location identification.
 
 ### Record 2
-**Raw Data:** TODO
+**Raw Data:** 
+ID,Case Number,Date,Block,IUCR,Primary Type,Description,Location Description,Arrest,Domestic,Beat,District,Ward,Community Area,FBI Code,X Coordinate,Y Coordinate,Year,Updated On,Latitude,Longitude,Location
+13210004,JG422532,2023-07-24 21:45:00,073XX S JEFFERY BLVD,0281,CRIMINAL SEXUAL ASSAULT,NON-AGGRAVATED,APARTMENT,False,False,333,3.0,7.0,43.0,02,1190812.0,1856743.0,2023,09/16/2023 03:41:56 PM,41.7619185,-87.576209245,"(41.7619185, -87.576209245)"
 
-**Interpretation:** TODO
+**Interpretation:** 
+This row represents another incident that occurred on July 24, 2023, at 21:45 at the location "073XX S JEFFERY BLVD" 
+The incident is classified as "CRIMINAL SEXUAL ASSAULT" with a description of "NON-AGGRAVATED" It happened in an "APARTMENT" There was no arrest made, 
+and it was not a domestic incident. This incident falls within Beat 333, District 3, Ward 7, and Community Area 43. The FBI Code for this incident is 2. 
+The geographical coordinates of the incident are (41.7619185, -87.57620925). The data entry indicates that the incident occurred in the year 2023, 
+the last update to this record was on September 16, 2023, at 15:41 and case ID is 13210004 with case number JG422532.
+
+Reasonableness:
+The data providing information about a specific criminal incident of a sensitive nature. It includes the location, type of crime, and relevant law enforcement details, such as beat, district, and geographical coordinates, which are crucial for law enforcement and analysis.
 
 ## Background Domain Knowledge
 TODO
