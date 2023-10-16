@@ -9,7 +9,7 @@ Chicago Police Department
 
 **Dataset Construction Date:** 
 Created Date	November 10, 2020;
-Updated Date	October 13, 2023;
+As on 10/15/2023 Updated Date October 13, 2023;
 
 **Dataset Record Count:** 1119596
 Totla entries: Seven million nine hundred eleven thousand five hundred ninety-eight (7911598)
@@ -65,11 +65,15 @@ Longitude: The geographical longitude of the incident's location, typically repr
 
 Location: A combined field that provides the geographical coordinates (latitude and longitude) in a single format.
 
-**Dataset File Hash(es):** TODO
+**Dataset File Hash(es):** 
+0d3f739d78494e6ca14955cd7e35b77e
 
 ## Interpretable Records
 ### Record 1
-**Raw Data:** TODO
+**Raw Data:** 
+ID	Case Number	Date	Block	IUCR	Primary Type	Description	Location Description	Arrest	Domestic	Beat	District	Ward	Community Area	FBI Code	X Coordinate	Y Coordinate	Year	Updated On	Latitude	Longitude	Location
+13210088	JG423627	8/31/2023 12:00	023XX W JACKSON BLVD	1153	DECEPTIVE PRACTICE	FINANCIAL IDENTITY THEFT OVER $ 300	STREET	FALSE	FALSE	1225	12	27	28	11	1160870	1898642	2023	9/16/2023 15:41	41.87756511	-87.68479102	(41.877565108, -87.68479102)
+
 
 Interpretation:** TODO
 
