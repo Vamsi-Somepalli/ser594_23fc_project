@@ -5,8 +5,10 @@ import hashlib
 def preprocess(inputfile):
     
 
-
+    #READING csv file using pandas
     df=pd.read_csv(inputfile) 
+
+    #tofind MS5
     csv_content = df.to_csv(index=False).encode()
     file_md5_hash = calculate_md5_hash(csv_content)
     print("MD5 code:",file_md5_hash)
@@ -14,6 +16,7 @@ def preprocess(inputfile):
     # Convert the "Date" column to datetime
     df['Date'] = pd.to_datetime(df['Date'])
     #print(len(df))
+
     # Filter data for years after 2019
     df = df[df['Date'].dt.year >= 2019]
 
