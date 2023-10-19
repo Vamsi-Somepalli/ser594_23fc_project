@@ -11,12 +11,13 @@ Chicago Police Department
 Created Date	November 10, 2020;
 As on 10/15/2023 Updated Date October 13, 2023;
 
-**Dataset Record Count:** 1119596
-Totla entries: Seven million nine hundred eleven thousand five hundred ninety-eight (7911598)
+**Dataset Record Count:** 1102909
+
+Totla entries: seven million nine hundred fourteen thousand four hundred twenty-five (7914425)
 
 The dataset was preprocessed to only include data from 2019 to present, as older data may not be useful for analyzing crime trends.
 
-So the record count from 2019 to present are 1119596.
+So the record count from 2019 to present are 1102909(one million one hundred two thousand nine hundred nine).
 
 
 **Dataset Field Meanings:** 
@@ -65,8 +66,10 @@ Longitude: The geographical longitude of the incident's location, typically repr
 
 Location: A combined field that provides the geographical coordinates (latitude and longitude) in a single format.
 
-**Dataset File Hash(es):** 
-0d3f739d78494e6ca14955cd7e35b77e
+**Dataset File Hash(es):** (Data set may Update in a timely manner so the Hash might chnage while grader/reviewer run)
+Dataset URL: https://data.cityofchicago.org/api/views/ijzp-q8t2/rows.csv?accessType=DOWNLOAD
+
+Hash:dfdd6ca0ff0a10f1b794b0098417ce3e
 
 ## Interpretable Records
 
@@ -104,16 +107,70 @@ The data providing information about a specific criminal incident of a sensitive
 TODO
 
 ## Data Transformation
-### Transformation N
-**Description:** TODO
+### Transformation 1
+**Description:** Data Filtering for years after 2019.
 
-**Soundness Justification:** TODO
+The crime data was filtered to only include data from 2019 to present, as older data may not be useful for analyzing crime trends.
 
-(duplicate above as many times as needed; remove this line when done)
+**Soundness Justification:** 
+Crime trends can change over time, and older data may not be representative of current trends. For example, the types of crimes that are most common, the locations where crimes occur, and the demographics of crime victims and perpetrators can all change over time. By focusing on recent crime data, we can get a more accurate picture of current crime trends and identify areas where crime prevention and intervention efforts are most needed.
 
+### Transformation 2
+**Description:** Updates missing location description rows as "Unknown"
+
+This was done to minimize the loss of data, as the location description is not essential for all types of crime analysis
+
+**Soundness Justification:** 
+ Updating missing location description rows as "Unknown" allows us to include more data in our analysis, even if the data is not perfect. This is important because crime data is often incomplete, and having more data can lead to more accurate and informative results. ans also  it allows us to use the data to answer questions about crime trends and patterns, even if we do not have complete information about every crime.
+
+### Transformation 3
+**Description:** Removes rows with missing coordinates.
+
+The exact location of a crime is essential for many types of crime analysis, such as identifying crime hotspots, tracking the movement of crime over time, and analyzing the spatial distribution of crime. Without coordinates, it is impossible to do any of these things.
+
+**Soundness Justification:** 
+if crimes in certain neighborhoods or communities are more likely to have missing coordinates, this could lead to a biased view of crime patterns in the city. By removing rows with missing coordinates, we can help to reduce the risk of bias in our analysis.
+In addition, the fact that the missing coordinates are spread across all districts, community areas, and all years suggests that there is no systematic reason for the missing data. This makes it difficult to impute the missing values, and it also raises the possibility that the missing data is biased.
 
 ## Visualization
-### Visual N
-**Analysis:** TODO
+### Visual 1 : 
+Distribution of Crime Types (Log Scale)
+**Analysis:** 
+This bar plot shows the distribution of different crime types on a logarithmic scale. As the difference between different crime types is huge so took log scale.
 
-(duplicate above as many times as needed; remove this line when done)
+### Visual 2 : 
+Crime Trends Over Time on a Weekly Basis
+**Analysis:** 
+The line plot of weekly crime trends provides insight into how the number of crimes changes over time. It might show weekly patterns, such as fluctuations in crime rates during weekends.
+
+### Visual 3 : 
+Crime Trends Over Time on a Monthly Basis
+**Analysis:** 
+Similar to the weekly plot, this monthly plot highlights the broader trends in crime rates over time. It can help identify long-term patterns, chnages in crime over months.
+
+### Visual 4 : 
+Arrest vs. Non-Arrest (Pie Chart)
+
+**Analysis:** 
+This pie chart illustrates the proportion of crimes that resulted in arrests versus those that did not.
+i have implemented the same in bars aswell i liked the pie chart so including this aswell.
+
+### Visual 5 : 
+Arrest vs. Non-Arrest (Bar Chart)
+**Analysis:** 
+This is same as above but in bars. The blue and red bars represent non-arrested and arrested incidents, respectively.
+
+### Visual 6 : 
+Domestic vs. Non-Domestic Incidents (Pie Chart)
+**Analysis:** 
+This pie chart shows the distribution of domestic and non-domestic incidents. Pie charts helps to show how much percentage of crime are domestic/non-domestic so implemented pie rather than bars.
+
+### Visual 7 : 
+Histogram of Year
+**Analysis:** 
+The histogram of years provides an overview of the distribution of crimes across different years. It may reveal trends over the years, such as increasing or decreasing crime rates.
+
+### Visual 8 : 
+Scatter Plots of Quantitative Features
+**Analysis:** 
+These scatter plots visualize the relationships between pairs of quantitative features (e.g., 'Beat' vs. 'Ward'). They can help identify any correlations or patterns between these features.(there are six scatter plots)

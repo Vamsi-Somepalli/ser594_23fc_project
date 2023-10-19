@@ -6,6 +6,14 @@ import numpy as np
 
 
 def visualization(processed_file):
+    '''Generate various visualizations and statistics from a processed CSV file containing crime data.
+
+    Parameters:
+    processed_file (str): The path to the processed CSV file.
+
+    Returns:
+    None'''
+    
     data=pd.read_csv(processed_file)
 
     #summary file content
@@ -99,7 +107,7 @@ def visualization(processed_file):
     plt.figure(figsize=(6, 6))
     plt.pie(arrest_counts, labels=arrest_counts.index, autopct='%1.1f%%', startangle=90)
     plt.title('Arrest vs. Non-Arrest')
-    plt.savefig('./visuals/Arrested_.png')
+    plt.savefig('./visuals/Arrested_pie.png')
     plt.legend(['Non-Arrest', 'Arrest'], loc='lower right')
     plt.show()
 
@@ -120,7 +128,7 @@ def visualization(processed_file):
     plt.figure(figsize=(6, 6))
     plt.pie(domestic_counts, labels=domestic_counts.index, autopct='%1.1f%%', startangle=90)
     plt.title('Domestic vs. Non-Domestic Incidents')
-    plt.savefig('./visuals/isdomestic.png')
+    plt.savefig('./visuals/isdomestic_pie.png')
     # Add a legend
     plt.legend(['Non-Domestic', 'Domestic'], loc='lower right')
     plt.show()

@@ -2,27 +2,27 @@ Qualitative Features:
 
 Feature: Primary Type
 Number of Categories: 33
-Most Frequent Category: THEFT (Count: 236355)
+Most Frequent Category: THEFT (Count: 236982)
 Least Frequent Category: RITUALISM (Count: 1)
 
 Feature: Year
 Number of Categories: 5
 Most Frequent Category: 2019 (Count: 259153)
-Least Frequent Category: 2023 (Count: 197079)
+Least Frequent Category: 2023 (Count: 199915)
 
 Feature: Arrest
 Number of Categories: 2
-Most Frequent Category: False (Count: 935126)
-Least Frequent Category: True (Count: 164949)
+Most Frequent Category: False (Count: 937644)
+Least Frequent Category: True (Count: 165265)
 
 Feature: Domestic
 Number of Categories: 2
-Most Frequent Category: False (Count: 875834)
-Least Frequent Category: True (Count: 224241)
+Most Frequent Category: False (Count: 878159)
+Least Frequent Category: True (Count: 224750)
 
 Feature: Location Description
 Number of Categories: 188
-Most Frequent Category: STREET (Count: 284540)
+Most Frequent Category: STREET (Count: 285465)
 Least Frequent Category: BANQUET HALL (Count: 1)
 
 

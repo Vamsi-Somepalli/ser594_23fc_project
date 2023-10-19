@@ -3,7 +3,13 @@ import hashlib
 
 
 def preprocess(inputfile):
-    
+    '''Preprocess a CSV file containing crime data, including filtering, cleaning, and saving the result.
+
+    Parameters:
+    inputfile (str): The path to the input CSV file containing crime data.
+
+    Returns:
+    None'''
 
     #READING csv file using pandas
     df=pd.read_csv(inputfile) 
@@ -15,13 +21,13 @@ def preprocess(inputfile):
 
     # Convert the "Date" column to datetime
     df['Date'] = pd.to_datetime(df['Date'])
-    #print(len(df))
+    print("No of records before preprocessing",len(df))
 
     # Filter data for years after 2019
     df = df[df['Date'].dt.year >= 2019]
 
     #to know number of records(data)
-    #print(len(df))
+    
 
     #to show number of null values in our dataset
     #print(df.isnull().sum())
@@ -32,7 +38,7 @@ def preprocess(inputfile):
 
     #without coordinates we cannot analize the data so removing those lines of data
     df = df.dropna(subset=['X Coordinate','Ward','Community Area'])
-
+    print("No of records after preprocessing",len(df))
     # print(len(df))
     # print(df.isnull().sum())
     # Save the preprocessed data to a new CSV file
