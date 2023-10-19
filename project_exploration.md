@@ -104,7 +104,22 @@ Reasonableness:
 The data providing information about a specific criminal incident of a sensitive nature. It includes the location, type of crime, and relevant law enforcement details, such as beat, district, and geographical coordinates, which are crucial for law enforcement and analysis.
 
 ## Background Domain Knowledge
-TODO
+The domain of crime analytics, specifically in the context of the city of Chicago, is crucial area of study that combines data science, criminology to understand, predict, and combat crime in an urban environment.Chicago, as one of the most populous cities in the United States, faces complex challenges related to crime and safety, so analysing  the crime in such cities helps in determining the trends/patterns in crimes and possible cause of crimes. Identifing the crime hotspots helps in urban planing and resource allocation and possible crime predection(future scope).
+
+The paper "Specialized knowledge: Understanding crime analyst's roles and responsibilities and the impact of their work" by Emma Brown and Dale Ballucci (2022)[1] provides a comprehensive overview of the field of crime analysis and discussed challenges faced by crime analysts, such as the need to stay up-to-date on the latest crime prevention and intervention strategies.this paper helped me understanding of the field of crime analysis and the importance of crime analysts' work. 
+
+Crime analytics begins with the collection of vast amounts of data related to criminal incidents.Researchers and policymakers have come to rely especially on an annual Uniform Crime Reporting publication[2] for understanding the previous year’s crime trends[3]. important thing in collectiung crime data is all the data might not be available all the times its important to clean the
+data accordingly.
+
+Analysis: 
+In this project, we are conducting a comprehensive analysis of crime data in Chicago. focusing on how crime has changed over the years, understand arrest trends, and dig into the details of who, what, and where these incidents occur.
+and presenting those findings using data analysis techniques and data visualizations.
+
+
+
+1.Brown, E., & Ballucci, D. (2022). Specialized knowledge: Understanding crime analyst’s roles and responsibilities and the impact of their work. Criminology & Criminal Justice, 0(0). https://doi.org/10.1177/17488958221095980
+2.“Crime in the U.S.” FBI, FBI, 15 July 2010, ucr.fbi.gov/crime-in-the-u.s/. 
+3. Kim, Noah, and Ames Grawert. “Understanding the FBI’s 2021 Crime Data.” Brennan Center for Justice, 16 Oct. 2023, www.brennancenter.org/our-work/research-reports/understanding-fbis-2021-crime-data.  
 
 ## Data Transformation
 ### Transformation 1
