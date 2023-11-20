@@ -1,0 +1,12 @@
+****************Linear Regression****************
+Mean Squated Error:492577.951068709
+Mean Absolute Error: 583.7524729418303
+****************Ridge Regression****************
+Mean Squated Error:492577.9519674809
+Mean Absolute Error: 583.7524741913851
+****************Lasso Regression****************
+Mean Squated Error:492578.19182799157
+Mean Absolute Error: 583.7528076643322
+****************Random Forest****************
+Mean Squated Error:492578.19182799157
+Mean Absolute Error: 583.7528076643322
