@@ -1,12 +1,18 @@
 ****************Linear Regression****************
-Mean Squated Error:492577.951068709
-Mean Absolute Error: 583.7524729418303
+Mean Squated Error:69.22742304570939
+R2 score:0.032890092066448884
 ****************Ridge Regression****************
-Mean Squated Error:492577.9519674809
-Mean Absolute Error: 583.7524741913851
+Mean Squated Error:69.2274233652433
+R2 score:0.03289008760254741
 ****************Lasso Regression****************
-Mean Squated Error:492578.19182799157
-Mean Absolute Error: 583.7528076643322
+Mean Squated Error:69.30342443539169
+R2 score:0.03182834956983838
 ****************Random Forest****************
-Mean Squated Error:492578.19182799157
-Mean Absolute Error: 583.7528076643322
+Mean Squated Error:27.991059387929806
+R2 score:0.6089637649844437
+****************Decision Tree****************
+Mean Squared Error: 45.46019403623912
+R2 score: 0.3649192453690002
+****************k-NN****************
+Mean Squared Error:34.06281637894136
+R2 score:0.5241410735389613

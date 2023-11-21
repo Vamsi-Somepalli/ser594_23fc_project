@@ -1,5 +1,5 @@
 #### SER594: Project Proposal
-#### Crime Analytics: City of Chicago (title)
+#### CCrime Prediction: Weekly Incident Forecasting Using Machine Learning Approach (title)
 #### Vamsi Krishna Somepalli (author)
 #### 10/15/2023 (date)
 

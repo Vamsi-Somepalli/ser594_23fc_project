@@ -1,5 +1,5 @@
 #### SERX94: Exploratory Data Munging and Visualization
-#### Crime Analytics: City of Chicago (title)
+#### Crime Prediction: Weekly Incident Forecasting Using Machine Learning Approach (title)
 #### Vamsi Krishna Somepalli (author)
 #### 10/15/2023 (date)
 

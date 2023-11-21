@@ -3,6 +3,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import Ridge
 from sklearn.linear_model import Lasso
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.neighbors import KNeighborsRegressor
 
 import pickle
 
@@ -35,6 +37,21 @@ def train_Random_forest(X_train,Y_train):
     with open(Rf_model_file, 'wb') as model_file:
         pickle.dump(model, model_file)
     return Rf_model_file
+def train_decision_tree(X_train, Y_train):
+    
+    model = DecisionTreeRegressor()
+    model.fit(X_train, Y_train)
+    dt_model_file = 'models/decision_tree_model.pkl'
+    with open(dt_model_file, 'wb') as model_file:
+        pickle.dump(model, model_file)
+    return dt_model_file
 
+def train_knn(X_train, Y_train, k):
+    model = KNeighborsRegressor(n_neighbors=k)
+    model.fit(X_train, Y_train)
+    knn_model_file = 'models/knn_model.pkl'
+    with open(knn_model_file, 'wb') as model_file:
+        pickle.dump(model, model_file)
+    return knn_model_file
 
 
